@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 272 52% 40%; /* Purple color for S-BOT */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 272 52% 40%; /* Purple color for S-BOT */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 12%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 272 52% 40%; /* Purple color for S-BOT */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 272 52% 40%; /* Purple color for S-BOT */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 272 52% 40%; /* Purple color for S-BOT */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-dark-background text-foreground;
+  }
+}
+
+@layer components {
+  .navbar {
+    @apply fixed top-0 w-full bg-dark-background text-white py-4 z-50;
+  }
+
+  .btn-cta {
+    @apply px-6 py-3 bg-[#6e309b] text-white rounded-full font-medium hover:bg-[#6e309b]/90 transition-colors;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold text-center mb-10 text-[#6e309b];
+  }
+
+  .features-card {
+    @apply bg-dark-card rounded-lg p-6 shadow-md text-center h-full flex flex-col items-center;
+  }
+
+  .pricing-card {
+    @apply bg-dark-card rounded-lg p-8 shadow-md h-full flex flex-col items-center text-center;
+  }
+
+  .pricing-card .price {
+    @apply text-2xl font-bold text-[#6e309b] mb-4;
+  }
+
+  .pricing-card ul {
+    @apply mb-6 space-y-2 flex flex-col items-center;
+  }
+
+  .about-card {
+    @apply bg-dark-card rounded-lg p-6 shadow-md text-center h-full flex flex-col items-center justify-center;
+  }
+
+  .about-card p a {
+    @apply text-[#6e309b] hover:underline;
+  }
+
+  .faq-card {
+    @apply bg-dark-card rounded-lg p-6 shadow-md mb-4;
+  }
+
+  .header {
+    @apply min-h-screen flex flex-col items-center justify-center text-center px-4 pt-20;
+  }
+}
