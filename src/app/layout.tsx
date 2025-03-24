@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import ClientBody from "./ClientBody";
+import Snowfall from "@/components/Snowfall";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -22,8 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} dark`}>
       <ClientBody>
-        {/* Simple snowfall effect */}
-        <div className="snowfall"></div>
+        <Snowfall />
         {children}
       </ClientBody>
     </html>
