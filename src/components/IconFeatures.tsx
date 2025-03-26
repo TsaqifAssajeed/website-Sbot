@@ -11,7 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export const GameIcon = () => (
-  <div className="h-12 w-12 flex items-center justify-center rounded-full bg-dark-background mb-4">
+  <div className="h-12 w-12 flex items-center justify-center rounded-full bg-dark-background mb-4 relative z-10">
     <FontAwesomeIcon icon={faGamepad} className="h-6 w-6 text-[#6e309b]" />
   </div>
 );

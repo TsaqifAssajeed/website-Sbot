@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="py-20">
+    <section id="pricing" className="py-20 relative z-10">
       <div className="container mx-auto px-4">
         <h2 className="section-title">Pricing Plans</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

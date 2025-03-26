@@ -22,7 +22,7 @@ export default function Snowfall() {
       id: index,
       left: random(1, 99),
       size: randomFloat(0.1, 0.3),
-      speedY: randomFloat(15, 35),
+      speedY: randomFloat(5, 15), // Percepat animasi jika terlalu lambat
       opacity: randomFloat(0.1, 0.4),
       delay: randomFloat(0, 20),
     }));
@@ -31,7 +31,7 @@ export default function Snowfall() {
   }, []);
 
   return (
-    <div className="snowfall-wrapper">
+    <div className="snowfall-wrapper" style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", zIndex: 0 }}>
       {snowflakes.map((flake) => (
         <div
           key={flake.id}
@@ -42,7 +42,7 @@ export default function Snowfall() {
             width: `${flake.size}rem`,
             height: `${flake.size}rem`,
             opacity: flake.opacity,
-            backgroundColor: "white",
+            backgroundColor: "white", // Warna salju
             borderRadius: "50%",
             animation: `snowfall ${flake.speedY}s linear infinite`,
             animationDelay: `${flake.delay}s`,

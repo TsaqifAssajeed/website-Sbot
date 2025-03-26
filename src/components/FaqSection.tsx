@@ -7,7 +7,7 @@ import {
 
 export default function FaqSection() {
   return (
-    <section id="faq" className="py-20">
+    <section id="faq" className="py-20 relative z-10">
       <div className="container mx-auto px-4">
         <h2 className="section-title">FAQ</h2>
 
