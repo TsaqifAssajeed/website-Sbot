@@ -15,7 +15,7 @@ export default function PricingSection() {
               <li>✔️ Group Management Tools</li>
             </ul>
             <a
-              href="https://admin.rbotz.biz.id"
+              href="https://admin.sbots.biz.id"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-cta inline-block"
@@ -33,7 +33,7 @@ export default function PricingSection() {
               <li>✔️ Priority Support</li>
             </ul>
             <a
-              href="https://admin.rbotz.biz.id"
+              href="https://admin.sbots.biz.id"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-cta inline-block"
