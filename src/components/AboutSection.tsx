@@ -8,15 +8,15 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="about-card">
             <GroupIcon />
-            <h4 className="text-xl font-semibold mb-3">Grup</h4>
+            <h4 className="text-xl font-semibold mb-3">Group</h4>
             <p>
               <a
-                href="https://grup.rbotz.biz.id"
+                href="https://group.sbots.biz.id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#6e309b] hover:underline"
               >
-                grup.sbotz.biz.id
+                group.sbots.biz.id
               </a>
             </p>
           </div>
@@ -26,12 +26,12 @@ export default function AboutSection() {
             <h4 className="text-xl font-semibold mb-3">Nomor Bot</h4>
             <p>
               <a
-                href="https://no.rbotz.biz.id"
+                href="https://no.sbots.biz.id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#6e309b] hover:underline"
               >
-                no.sbotz.biz.id
+                no.sbots.biz.id
               </a>
             </p>
           </div>
@@ -41,12 +41,12 @@ export default function AboutSection() {
             <h4 className="text-xl font-semibold mb-3">Saluran</h4>
             <p>
               <a
-                href="https://saluran.rbotz.biz.id"
+                href="https://channel.sbots.biz.id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#6e309b] hover:underline"
               >
-                saluran.sbotz.biz.id
+                channel.sbots.biz.id
               </a>
             </p>
           </div>
