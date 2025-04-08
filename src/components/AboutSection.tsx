@@ -23,7 +23,7 @@ export default function AboutSection() {
 
           <div className="about-card">
             <PhoneIcon />
-            <h4 className="text-xl font-semibold mb-3">Nomor Bot</h4>
+            <h4 className="text-xl font-semibold mb-3">Number Bot</h4>
             <p>
               <a
                 href="https://no.sbots.biz.id"
@@ -38,7 +38,7 @@ export default function AboutSection() {
 
           <div className="about-card">
             <ChannelIcon />
-            <h4 className="text-xl font-semibold mb-3">Saluran</h4>
+            <h4 className="text-xl font-semibold mb-3">Channel</h4>
             <p>
               <a
                 href="https://channel.sbots.biz.id"
